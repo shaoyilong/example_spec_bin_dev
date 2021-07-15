@@ -1,0 +1,22 @@
+{
+  "name": "JXCategoryView",
+  "version": "1.5.8",
+  "summary": "A powerful and easy to use category view (segment view, segment control, page view, scroll viewcontroller)",
+  "homepage": "https://github.com/pujiaxin33/JXCategoryView",
+  "license": "MIT",
+  "authors": {
+    "pujiaxin33": "317437084@qq.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "http": "http://localhost:27017/frameworks/JXCategoryView/1.5.8/zip",
+    "type": "zip"
+  },
+  "source_files": "bin_JXCategoryView_1.5.8/Headers/*",
+  "requires_arc": true,
+  "public_header_files": "bin_JXCategoryView_1.5.8/Headers/*.h",
+  "vendored_libraries": "bin_JXCategoryView_1.5.8/*.a",
+  "description": "「   converted automatically by plugin cocoapods-imy-bin @厦门美柚 - slj    」"
+}
