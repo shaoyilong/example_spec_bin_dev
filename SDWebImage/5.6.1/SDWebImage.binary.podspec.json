@@ -1,0 +1,61 @@
+{
+  "name": "SDWebImage",
+  "version": "5.6.1",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "license": "MIT",
+  "summary": "Asynchronous image downloader with cache support with an UIImageView category.",
+  "homepage": "https://github.com/SDWebImage/SDWebImage",
+  "authors": {
+    "Olivier Poitrey": "rs@dailymotion.com"
+  },
+  "source": {
+    "http": "http://localhost:27017/frameworks/SDWebImage/5.6.1/zip",
+    "type": "zip"
+  },
+  "description": "「   converted automatically by plugin cocoapods-imy-bin  」\n This library provides a category for UIImageView with support for remote images coming from the web. It provides an UIImageView category adding web image and cache management to the Cocoa Touch framework, an asynchronous image downloader, an asynchronous memory + disk image caching with automatic cache expiration handling, a guarantee that the same URL won't be downloaded several times, a guarantee that bogus URLs won't be retried again and again, and performances!",
+  "requires_arc": true,
+  "frameworks": "ImageIO",
+  "default_subspecs": "Core",
+  "pod_target_xcconfig": {
+    "SUPPORTS_MACCATALYST": "YES",
+    "DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER": "NO"
+  },
+  "vendored_frameworks": "SDWebImage.framework",
+  "source_files": [
+    "SDWebImage.framework/Headers/*",
+    "SDWebImage.framework/Versions/A/Headers/*"
+  ],
+  "public_header_files": [
+    "SDWebImage.framework/Headers/*",
+    "SDWebImage.framework/Versions/A/Headers/*"
+  ],
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "SDWebImage/Core/*.{h,m}",
+        "WebImage/SDWebImage.h",
+        "SDWebImage/Private/*.{h,m}"
+      ],
+      "exclude_files": "SDWebImage/MapKit/*.{h,m}",
+      "private_header_files": "SDWebImage/Private/*.h"
+    },
+    {
+      "name": "MapKit",
+      "platforms": {
+        "osx": "10.10",
+        "ios": "8.0",
+        "tvos": "9.2"
+      },
+      "source_files": "SDWebImage/MapKit/*.{h,m}",
+      "frameworks": "MapKit",
+      "dependencies": {
+        "SDWebImage/Core": [
+
+        ]
+      }
+    }
+  ]
+}
