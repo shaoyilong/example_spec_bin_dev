@@ -1,1 +1,27 @@
-
+{
+  "name": "FMDB",
+  "version": "2.7.5",
+  "license": "MIT",
+  "summary": "A delightful networking framework for Apple platforms.",
+  "homepage": "https://github.com/ccgus/fmdb",
+  "social_media_url": "https://github.com/ccgus/fmdb",
+  "authors": {
+    "Mattt Thompson": "m@mattt.me"
+  },
+  "source": {
+    "http": "http://localhost:8080/frameworks/AFNetworking/4.0.1/zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": [
+    "src/fmdb/FM*.{h,m}"
+  ],
+  "subspecs": [
+    {
+      "name": "standard",
+      "source_files": "src/fmdb/FM*.{h,m}"
+    }
+  ]
+}
