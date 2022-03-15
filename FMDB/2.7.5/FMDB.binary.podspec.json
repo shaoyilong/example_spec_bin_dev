@@ -9,7 +9,7 @@
     "Mattt Thompson": "m@mattt.me"
   },
   "source": {
-    "http": "http://localhost:8080/frameworks/AFNetworking/4.0.1/zip",
+    "http": "https://shaoyilong.github.io/static_framework_zips/bin_FMDB_2.7.5.zip",
     "type": "zip"
   },
   "platforms": {
